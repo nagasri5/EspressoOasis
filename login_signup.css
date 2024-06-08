@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    /* Optional background image */
+    /* background-image: url('background.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+label {
+    display: none; /* Hide the labels */
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #ecf0f1;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #95a5a6;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin-top: 15px;
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Optional styling for background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Optional background image */
+    background-image: url('login_signup2.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Optional background overlay */
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
